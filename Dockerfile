@@ -4,7 +4,7 @@ USER root
 RUN apt-get --yes --force-yes update \
     && apt-get install --yes --force-yes curl \
     && apt-get update -qq -y \
-    && apt-get --yes --force-yes install php5-cli php5-json php5-mcrypt php5-mysql php5 \
+    && apt-get --yes --force-yes install php5-cli php5-json php5-curl php5-mcrypt php5-mysql php5 build-essential make git \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer 
 
 # Install Node.js
